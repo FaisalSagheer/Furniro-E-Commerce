@@ -2,34 +2,127 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root {
-    --bs-btn-bg: #B88E2F;
-}
-
-.btn-primary {
-    background-color: var(--bs-btn-bg);
-}
-
-.card-img-overlay {
-    height: 443px;
-    width: 643px;
-}
-
-.bg-card-body {
-    background-color: #F4F5F7;
-}
-.my{
+.my {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.mb{
+
+.mb {
     margin-bottom: -10px;
 }
+
+/* Image Overlay Banner*/
+.card_img {
+    height: 180px;
+    width: 208px;
+}
+
+.card_img {
+    position: absolute;
+    top: 4px;
+    right: 90px;
+    bottom: 0;
+}
+
+.title {
+    color: #B88E2F;
+    font-size: 1rem;
+}
+
+.bg {
+    background-color: #B88E2F;
+    padding: .5rem;
+}
+
+.text-light {
+    text-decoration: none;
+    font-size: .6rem;
+}
+
+.card-subtitle {
+    font-size: .6rem;
+}
+
+.text {
+    font-size: .6rem;
+}
+.Heading-1{
+    font-size: 1.5rem;
+}
+/* Footer */
 .footer {
     margin-top: auto;
     background: #efefef;
 }
 
-@media screen and (min-width:420px) {
 
+@media screen and (min-width:768px) {
+    .card_img {
+        height: 260px;
+        width: 338px;
+    }
+
+    .card_img {
+        position: absolute;
+        top: 5rem;
+        right: 3rem;
+        bottom: 0;
+    }
+
+    .text {
+        font-size: .8rem;
+    }
+
+    .card-subtitle {
+        font-size: .8rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text-light {
+        font-size: .8rem;
+    }
+    .Heading-1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:1040px) {
+
+    /* Image Overlay Banner*/
+    .card_img {
+        height: 443px;
+        width: 643px;
+    }
+
+    .card_img {
+        top: 10rem;
+        right: 6rem;
+    }
+
+    .title {
+        font-size: 3.25rem;
+    }
+
+    .bg {
+        background-color: #B88E2F;
+        padding: 34px 100px;
+    }
+
+    .text-light {
+        font-size: 1rem;
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+    .Heading-1{
+        font-size: 2.5rem;
+    } 
 }

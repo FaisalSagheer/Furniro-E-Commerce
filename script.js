@@ -3,24 +3,27 @@
 
 
 const content = [
-    {
-        src: "images/image1.png",
-        heading: "Syltherine",
-        heading_shadow: "Stylish cafe chair",
-        price: "Rp 2.500.000",
-        price_cross: "Rp 3.500.000",
-        alt:"Img"
-    },
+  {
+    src: "images/image1.png",
+    heading: "Syltherine",
+    heading_shadow: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    price_cross: "Rp 3.500.000",
+    alt: "Img"
+  },
 ]
 
 const content1 = document.querySelector('.content')
 
 
 const cards = content.map(card => {
-    return `
+  return `
     
                  <div class="col">
                       <div class="card">
+                          <span class="position-absolute top-0 end-0 text-light py-3 px-2 mt-4 me-4 rounded-circle bg-danger">
+                            -30%
+                          </span>
                         <img src=${card.src} class="card-img-top" alt=${card.alt}>
                         <div class="card-body bg-card-body">
                           <h5 class="card-title fw-semibold fs-4">${card.heading}</h5>
