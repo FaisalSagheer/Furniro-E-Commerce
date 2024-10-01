@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid px-2 py-2">
+            <a class="navbar-brand ps-5" href="#"><img src="images/Logo.png" alt="Furnio"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ps-lg-5" id="navbarText">
+                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 ps-lg-5">
+                    <li class="nav-item ps-5 pe-2">
+                        <a class="nav-link fw-medium active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ps-5 pe-2">
+                        <a class="nav-link fw-medium link-dark" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item ps-5 pe-2">
+                        <a class="nav-link fw-medium link-dark" href="#">About</a>
+                    </li>
+                    <li class="nav-item ps-5 pe-2">
+                        <a class="nav-link fw-medium link-dark" href="#">Contact</a>
+                    </li>
+                </ul>
+                <span class="navbar-text pe-5">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ps-5 pe-4">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                    viewBox="0 0 24 24">
+                                    <rect width="24" height="24" fill="none" />
+                                    <path fill="currentColor"
+                                        d="M20 12V7h2v6h-2m0 4h2v-2h-2m-10-2c2.67 0 8 1.34 8 4v3H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1m0-9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8A2.1 2.1 0 0 0 10 5.9" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-5 ps-lg-0 pe-4">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                    viewBox="0 0 24 24">
+                                    <rect width="24" height="24" fill="none" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                        d="m21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-5 ps-lg-0 pe-4">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.7em" height="1.7em"
+                                    viewBox="0 0 24 24">
+                                    <rect width="24" height="24" fill="none" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-5 ps-lg-0 pe-4">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em"
+                                    viewBox="0 0 1024 1024">
+                                    <rect width="1024" height="1024" fill="none" />
+                                    <path fill="currentColor"
+                                        d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2M305.7 253l575.8 1.9l-56.4 315.8l-452.3.8zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6s14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6m325.1 0c-17.4 0-31.6-14.2-31.6-31.6s14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6" />
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="card">
+                    <img src="images/Home_Hero_Background.png" class="card-img" alt="img">
+                    <!-- <div class="card-img-overlay mx-auto me-5 mt-5 d-flex align-items-center"
+                        style="background-color: #FFF3E3;">
+                        <div class="row g-2 d-flex justify-content-center">
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <p class="card-title fw-semibold">New Arrival</p>
+                                    <h1 class="card-title fw-bold" style="color: #B88E2F;">Discover Our <br> New
+                                        Collection</h1>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                        elit tellus, luctus nec ullamcorper mattis.</p>
+                                    <button type="button" class="border border-0 px-5 p-4 text-light fw-bold"
+                                        style="background-color: #B88E2F;">BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid p-5">
+
+                <div class="text-center my-5">
+                    <h1 class="fs-1 fs-4 fw-semibold">Browse The Range</h1>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-3 g-lg-4 px-5 text-center">
+                    <div class="col">
+                        <div class="card h-100 border border-0">
+                            <img src="images/Dining.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title pt-3 fw-semibold">Dining</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border border-0">
+                            <img src="images/living.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title pt-3 fw-semibold">Living</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border border-0">
+                            <img src="images/Bedroom.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title pt-3 fw-semibold">Bedroom</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <h1 class="fs-1 fw-bold">Our Products</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-0 py-4 px-5 content">
+                    <!-- Cards -->
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a class="btn" href="#" role="button" style="color: #B88E2F; border-color: #B88E2F;" >Show More</a>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,35 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bs-btn-bg: #B88E2F;
+}
+
+.btn-primary {
+    background-color: var(--bs-btn-bg);
+}
+
+.card-img-overlay {
+    height: 443px;
+    width: 643px;
+}
+
+.bg-card-body {
+    background-color: #F4F5F7;
+}
+.my{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.mb{
+    margin-bottom: -10px;
+}
+.footer {
+    margin-top: auto;
+    background: #efefef;
+}
+
+@media screen and (min-width:420px) {
+
+}
