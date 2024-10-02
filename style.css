@@ -62,8 +62,8 @@
     margin-top: auto;
 }
 .py-6{
-    padding-top: 4.2rem;
-    padding-bottom: 4.2rem;
+    padding-top: 3rem;
+    /* padding-bottom: .2rem; */
 }
 .list-group-item{
     font-size: 1rem;
