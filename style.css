@@ -10,9 +10,12 @@
 .mb {
     margin-bottom: -10px;
 }
-.bg_random{
-    background: #FCF8F3;;
+
+.bg_random {
+    background: #FCF8F3;
+    ;
 }
+
 /* Image Overlay Banner*/
 .card_img {
     height: 180px;
@@ -48,32 +51,89 @@
 .text {
     font-size: .6rem;
 }
-.Heading-1{
+
+.Heading-1 {
     font-size: 1.5rem;
 }
+
 /* Slider  */
-.d-block{
+.d-block {
     height: 582px;
     width: 404px;
     margin: 0 20px;
 }
+
 /* Footer */
 .footer {
     margin-top: auto;
 }
-.py-6{
+
+.py-6 {
     padding-top: 3rem;
     /* padding-bottom: .2rem; */
 }
-.list-group-item{
+
+.list-group-item {
     font-size: 1rem;
 }
-.white-space{
+
+.white-space {
     white-space: pre-line;
 }
-.pt-half{
-    padding-top: .125rem;
+.white-space-pre {
+    white-space: pre;
 }
+
+.pt-half {
+    padding-top: 1rem;
+}
+
+/* Card  */
+.card img {
+    transition: transform 0.5s;
+    width: 100%;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.overlay {
+    margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+}
+.cardLhover img {
+    transform: scale(1.2);
+}
+
+.card:hover .overlay{
+    height: 100%;
+}
+
+/* Shop Page*/
+/* Banner */
+.link-black {
+    text-decoration: none;
+    color: #000;
+}
+
 @media screen and (min-width:768px) {
     .card_img {
         height: 260px;
@@ -102,7 +162,8 @@
     .text-light {
         font-size: .8rem;
     }
-    .Heading-1{
+
+    .Heading-1 {
         font-size: 2rem;
     }
 }
@@ -140,7 +201,8 @@
     .text {
         font-size: 1rem;
     }
-    .Heading-1{
+
+    .Heading-1 {
         font-size: 2.5rem;
-    } 
+    }
 }
