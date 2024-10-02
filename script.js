@@ -31,7 +31,7 @@ const cards = content.map(card => {
                         <p class="text-body-tertiary fw-medium fs-6">${card.heading_shadow}</p>
                         </div>
                           <div class="d-flex justify-content-between align-items-baseline my">
-                          <p class="card-text fw-semibold fs-5">${card.price}</p>
+                          <p class="card-text fw-semibold fs-5 fs-6">${card.price}</p>
                           <p class="card-text text-body-tertiary text-decoration-line-through fs-6">${card.price_cross}</p>
                           </div>
                         </div>

@@ -10,7 +10,9 @@
 .mb {
     margin-bottom: -10px;
 }
-
+.bg_random{
+    background: #FCF8F3;;
+}
 /* Image Overlay Banner*/
 .card_img {
     height: 180px;
@@ -48,6 +50,11 @@
 }
 .Heading-1{
     font-size: 1.5rem;
+}
+/* Slider  */
+.d-block{
+    height: 582px;
+    width: 404px;
 }
 /* Footer */
 .footer {
