@@ -55,14 +55,25 @@
 .d-block{
     height: 582px;
     width: 404px;
+    margin: 0 20px;
 }
 /* Footer */
 .footer {
     margin-top: auto;
-    background: #efefef;
 }
-
-
+.py-6{
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem;
+}
+.list-group-item{
+    font-size: 1rem;
+}
+.white-space{
+    white-space: pre-line;
+}
+.pt-half{
+    padding-top: .125rem;
+}
 @media screen and (min-width:768px) {
     .card_img {
         height: 260px;
