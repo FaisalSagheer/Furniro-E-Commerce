@@ -39,6 +39,14 @@
     padding: .5rem;
 }
 
+.bgBtn {
+    background-color: #B88E2F;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 44px;
+    border-radius: 2px;
+}
+
 .text-light {
     text-decoration: none;
     font-size: .6rem;
@@ -80,6 +88,7 @@
 .white-space {
     white-space: pre-line;
 }
+
 .white-space-pre {
     white-space: pre;
 }
@@ -110,6 +119,7 @@
     font-size: 14px;
     transition: height 0.5s;
 }
+
 .overlay {
     margin-top: 10px;
     color: #262626;
@@ -119,11 +129,12 @@
     text-align: center;
     padding: 5px 15px;
 }
+
 .cardLhover img {
     transform: scale(1.2);
 }
 
-.card:hover .overlay{
+.card:hover .overlay {
     height: 100%;
 }
 
@@ -166,6 +177,10 @@
     .Heading-1 {
         font-size: 2rem;
     }
+    .bgBtn{
+        padding: 10px 40px;
+        border-radius: 2px;
+    }
 }
 
 @media screen and (min-width:1040px) {
@@ -204,5 +219,9 @@
 
     .Heading-1 {
         font-size: 2.5rem;
+    }
+    .bgBtn{
+        padding: 14px 88px;
+        border-radius: 2px;
     }
 }
