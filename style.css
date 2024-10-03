@@ -2,6 +2,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.bglightyellow {
+    background-color: #F9F1E7;
+}
+
 .my {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -64,6 +68,56 @@
     font-size: 1.5rem;
 }
 
+/* Cards  Hover-Effect*/
+.card {
+    /* overflow: hidden;
+    bottom: 0; */
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0 0 0/50%);
+    top: 0;
+    width: 100%;
+    height: 0;
+    padding: 2.2rem;
+    overflow: hidden;
+    transition: 0.7s;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+    height: 100%;
+    transition: 0.7s;
+}
+
+/* Blog Page Start*/
+.card-text {
+    padding-right: 20px;
+    color: #9F9F9F;
+}
+
+.text-grey {
+    color: #9F9F9F;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.text-recent-grey{
+    color: #9F9F9F;
+}
+.img {
+    width: 817px;
+    height: 250px;
+}
+
+/* Recent Posts*/
+.texthead {
+    font-size: .6rem;
+}
+
+/* Blog Page End*/
+
 /* Slider  */
 .d-block {
     height: 582px;
@@ -97,52 +151,16 @@
     padding-top: 1rem;
 }
 
-/* Card  */
-.card img {
-    transition: transform 0.5s;
-    width: 100%;
-}
-
-.overlay {
-    height: 0;
-    width: 100%;
-    background: linear-gradient(transparent, #1c1c1c 58%);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-
-.overlay {
-    margin-top: 10px;
-    color: #262626;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 50px;
-    text-align: center;
-    padding: 5px 15px;
-}
-
-.cardLhover img {
-    transform: scale(1.2);
-}
-
-.card:hover .overlay {
-    height: 100%;
-}
 
 /* Shop Page*/
 /* Banner */
 .link-black {
     text-decoration: none;
     color: #000;
+}
+
+.w-20 {
+    width: 18%;
 }
 
 @media screen and (min-width:768px) {
@@ -177,9 +195,19 @@
     .Heading-1 {
         font-size: 2rem;
     }
-    .bgBtn{
+
+    .bgBtn {
         padding: 10px 40px;
         border-radius: 2px;
+    }
+
+    /* Blog */
+    .img {
+        width: 817px;
+        height: 250px;
+    }
+    .texthead {
+        font-size: .8rem;
     }
 }
 
@@ -220,8 +248,15 @@
     .Heading-1 {
         font-size: 2.5rem;
     }
-    .bgBtn{
+
+    .bgBtn {
         padding: 14px 88px;
         border-radius: 2px;
+    }
+
+    /* Blog */
+    .img {
+        width: 817px;
+        height: 500px;
     }
 }

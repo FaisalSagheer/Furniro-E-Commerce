@@ -25,8 +25,8 @@ const cards = content.map(card => {
                             -30%
                           </span>
                         <img src=${card.src} class="card-img-top" alt=${card.alt}>
-                        <div class="overly">
-                        <a href="#">Add to cart</a>
+                        <div class="overlay d-flex align-items-center">
+                        <a href="#" class="bgBtn">Add to cart</a>
                         </div>
                         <div class="card-body bg-card-body">
                           <h5 class="card-title fw-semibold fs-4">${card.heading}</h5>
