@@ -13,12 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <style>
-        .form-label {
-            padding-left: 5px;
-        }
-    </style>
-    <title>Checkout</title>
+    <title>Cart</title>
 </head>
 
 <body>
@@ -100,131 +95,70 @@
                 <img src="images/Shop-Banner.png" class="card-img" alt="...">
                 <div class="card-img-overlay text-center row align-items-center text-dark">
                     <div style="margin-top: auto;">
-                        <h1>Checkout</h1>
+                        <h1>Cart</h1>
                     </div>
                     <div style="margin-bottom: auto;">
                         <a href="home.html" class="link-black border border-0 fw-medium">Home></a>
-                        <a href="contact.html" class="link-black border border-0 fw-light">Checkout</a>
+                        <a href="cart.html" class="link-black border border-0 fw-light">Cart</a>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="container-fluid p-5 d-lg-flex d-md-flex justify-content-evenly">
-                <div class="col-md-6 col-lg-4">
-                    <h1 class="fs-1 fw-semibold pb-3">Billing Details</h1>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="formGroupExampleInput" class="form-label fs-6 fw-medium">First Name</label>
-                            <input type="text" class="form-control p-3" placeholder="First name"
-                                aria-label="First name">
+            <div class="container-fluid pt-3 px-5">
+
+                <div class="row justify-content-center p-5">
+                    <div class="col-lg-6 col-sm-6 mb-3 mb-sm-0">
+                        <div class="card border-0">
+                            <div class="card-body bglightyellow d-flex align-items-center justify-content-around">
+                                <h6 class="card-title">Product</h6>
+                                <h6 class="card-title">Price</h6>
+                                <h6 class="card-title">Quantity</h6>
+                                <h6 class="card-title">Subtotal</h6>
+                            </div>
+                            <ul class="list-unstyled d-flex align-items-center justify-content-between pt-3">
+                                <li class="text-recent-grey w-20">
+                                    <img src="images/cart.png" alt="#" class="w-25">
+                                    Asgaard sofa
+                                </li>
+                                <li class="text-recent-grey">250,000.00</li>
+                                <li class="border border-secondary-subtle p-2 rounded">1</li>
+                                <li class="ps-5">250,000.00</li>
+                                <li class="bgyellow"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em"
+                                        height="1.5em" viewBox="0 0 24 24">
+                                        <rect width="24" height="24" fill="none" />
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M9 2a1 1 0 0 0-.894.553L6.382 6H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 1 0 0-2h-2.382l-1.724-3.447A1 1 0 0 0 15 2zm6.382 4l-1-2H9.618l-1 2z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col">
-                            <label for="formGroupExampleInput" class="form-label fs-6 fw-medium">Last Name</label>
-                            <input type="text" class="form-control p-3" placeholder="Last name" aria-label="Last name">
-                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label fs-6 fw-medium">Comapny Name</label>
-                        <input type="text" class="form-control p-3" id="formGroupExampleInput" placeholder="Abc">
-                    </div>
-                    <div class="form-floating mb-3">
-                        <select class="form-select p-3" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected></option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <label for="floatingSelect">Country/Region</label>
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label fs-6 fw-medium">Street Address</label>
-                        <input type="text" class="form-control p-3" id="formGroupExampleInput" placeholder="Abc">
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label fs-6 fw-medium">Town/City</label>
-                        <input type="text" class="form-control p-3" id="formGroupExampleInput" placeholder="Abc">
-                    </div>
-                    <div class="form-floating mb-3">
-                        <select class="form-select p-3" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected>Province</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label fs-6 fw-medium">Zip Code</label>
-                        <input type="text" class="form-control p-3" id="formGroupExampleInput2"
-                            placeholder="This is an optional">
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label fs-6 fw-medium">Email Address</label>
-                        <input type="text" class="form-control p-3" id="formGroupExampleInput2"
-                            placeholder="Abc@def.com">
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="form-control py-3 px-4" id="exampleFormControlTextarea1" rows="4"
-                            placeholder="Additional Info"></textarea>
-                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="border-0 bglightyellow p-5">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fs-2 fw-semibold pb-5">Cart Totals</h5>
 
-                </div>
+                                <div class="d-flex justify-content-evenly align-items-center">
+                                    <ul class="list-unstyled">
+                                        <li class="fw-semibold mb-2">Subtotal</li>
+                                        <li class="fw-semibold mt-5">Total</li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li class="fw-semibold text-recent-grey pb-2">250,00.00</li>
+                                        <li class="fw-semibold bgyellow fs-3 pt-4">250,00.00</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-center pt-4">
+                                    <a href="#" class="btn border border-dark text-dark">Check Out</a>
+                                </div>
 
-                <div class="col-md-6 col-lg-4 pt-lg-2 pt-5">
-                    <div class="">
-                        <div>
-                            <div class="py-4">
-                                <div class="d-flex justify-content-between">
-                                    <div class="card-header fs-4 fw-medium bg-white border-0">
-                                        Product
-                                    </div>
-                                    <div class="card-header fs-4 fw-medium bg-white border-0">
-                                        Subtotal
-                                    </div>
-                                </div>
-                                <ul class="list-group list-unstyled border-bottom">
-                                    <li class="text-grey border-0 d-flex justify-content-between align-items-center">
-                                        Asgaard sofa x 1<small class="text-dark">Rs.250,000.00</small></li>
-                                    <li
-                                        class="text-grey text-dark border-0 d-flex justify-content-between align-items-center">
-                                        Subtotal<small class="text-dark">Rs.250,000.00</small></li>
-                                    <li
-                                        class="text-grey text-dark border-0 d-flex justify-content-between align-items-center">
-                                        Total<small class="fw-bold fs-4 title">Rs.250,000.00</small></li>
-                                </ul>
-                                <li class="text-grey text-dark fs-6 border-0">
-                                    Direct Bank Transfer</li>
-                                <p class="text-paragraph text-grey">Make your payment directly into our bank account. Please use
-                                    your Order ID as the
-                                    payment reference. Your order will not be shipped until the funds have cleared in
-                                    our account.</p>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                    <label class="form-check-label text-head" for="flexRadioDefault2">
-                                        Direct Bank Transfer
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <label class="form-check-label text-head" for="flexRadioDefault1">
-                                        Cash On Delivery
-                                    </label>
-                                </div>
-                                <p class="text-paragraph pt-4">Your personal data will be used to support your
-                                    experience throughout this website, to manage access to your account, and for other
-                                    purposes described in our <span class="fw-semibold">privacy policy.</span></p>
-                                <div class="d-flex justify-content-center pt-3">
-                                    <a class="btn border-dark px-5 py-2" href="#" role="button">Place Order</a>
-                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
+           
 
             </div>
         </section>
