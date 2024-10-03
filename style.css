@@ -133,7 +133,23 @@
 .text-paragraph {
     font-size: 0.6rem;
 }
+/* Single Product */
 
+.after::after{
+    content: '>';
+    font-size: 1.2rem;
+    color: #000;
+    padding-left: 12px;
+}
+.fa-solid{
+    color: #FFC700;
+}
+/* .para::after{
+    content: '';
+    width: 20px;
+    height: 40px;
+    color: #9F9F9F;
+} */
 /* Footer */
 .footer {
     margin-top: auto;
