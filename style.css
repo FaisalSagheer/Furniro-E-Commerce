@@ -111,9 +111,11 @@
     width: 817px;
     height: 250px;
 }
-.head{
+
+.head {
     font-size: .6rem;
 }
+
 /* Recent Posts*/
 .texthead {
     font-size: .6rem;
@@ -158,12 +160,15 @@
     border-radius: 10px;
     margin: 0 10px;
 }
-.dot:nth-child(2){
+
+.dot:nth-child(2) {
     background: #000000;
 }
-.dot:nth-child(3){
+
+.dot:nth-child(3) {
     background: #B88E2F;
 }
+
 /* Footer */
 .footer {
     margin-top: auto;
@@ -185,9 +190,11 @@
 .white-space-pre {
     white-space: pre;
 }
+
 .white-space-wrap {
     white-space: wrap;
 }
+
 .pt-half {
     padding-top: 1rem;
 }
@@ -211,9 +218,8 @@
     }
 
     .card_img {
-        position: absolute;
-        top: 5rem;
-        right: 3rem;
+        top: 4rem;
+        right: 3.3rem;
         bottom: 0;
     }
 
@@ -256,8 +262,9 @@
     .text-paragraph {
         font-size: 0.8rem;
     }
+
     /* Single Product */
-    .head{
+    .head {
         font-size: 1rem;
     }
 }
@@ -273,6 +280,7 @@
     .card_img {
         top: 10rem;
         right: 6rem;
+        bottom: 0;
     }
 
     .title {
@@ -319,7 +327,17 @@
     .texthead {
         font-size: 1rem;
     }
-    .head{
+
+    .head {
         font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+    .card_img {
+        top: 8rem;
+        right: 4rem;
+        bottom: 0;
     }
 }
