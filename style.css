@@ -68,7 +68,15 @@
 }
 
 .Heading-1 {
+    font-size: 1rem;
+}
+
+.Heading-2 {
     font-size: 1.5rem;
+}
+
+.Heading-3 {
+    font-size: 1rem;
 }
 
 /* Cards  Hover-Effect*/
@@ -121,6 +129,15 @@
     font-size: .6rem;
 }
 
+.categorieshead {
+    font-size: 0.9rem;
+}
+
+.imgRecent {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
 /* Blog Page End*/
 
 /* Slider  */
@@ -167,6 +184,11 @@
 
 .dot:nth-child(3) {
     background: #B88E2F;
+}
+
+/* Contact */
+.contacthead {
+    font-size: 1rem;
 }
 
 /* Footer */
@@ -240,6 +262,10 @@
     }
 
     .Heading-1 {
+        font-size: 1.5rem;
+    }
+
+    .Heading-2 {
         font-size: 2rem;
     }
 
@@ -256,6 +282,20 @@
 
     .texthead {
         font-size: .8rem;
+    }
+
+    .categorieshead {
+        font-size: 0.9rem;
+    }
+
+    .imgRecent {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* Contact */
+    .contacthead {
+        font-size: 1rem;
     }
 
     /* Checkout */
@@ -305,7 +345,15 @@
     }
 
     .Heading-1 {
+        font-size: 2rem;
+    }
+
+    .Heading-2 {
         font-size: 2.5rem;
+    }
+
+    .Heading-3 {
+        font-size: 3rem;
     }
 
     .bgBtn {
@@ -317,6 +365,20 @@
     .img {
         width: 817px;
         height: 500px;
+    }
+
+    .categorieshead {
+        font-size: 1.3rem;
+    }
+
+    .imgRecent {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    /* Contact */
+    .contacthead {
+        font-size: 1.5rem;
     }
 
     /* Checkout */
@@ -334,7 +396,7 @@
 }
 
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) {
     .card_img {
         top: 8rem;
         right: 4rem;
