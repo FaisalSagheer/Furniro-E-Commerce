@@ -5,9 +5,11 @@
 .bglightyellow {
     background-color: #F9F1E7;
 }
+
 .bgyellow {
     color: #B88E2F;
 }
+
 .my {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -109,7 +111,9 @@
     width: 817px;
     height: 250px;
 }
-
+.head{
+    font-size: .6rem;
+}
 /* Recent Posts*/
 .texthead {
     font-size: .6rem;
@@ -133,23 +137,33 @@
 .text-paragraph {
     font-size: 0.6rem;
 }
+
 /* Single Product */
 
-.after::after{
+.after::after {
     content: '>';
     font-size: 1.2rem;
     color: #000;
     padding-left: 12px;
 }
-.fa-solid{
+
+.fa-solid {
     color: #FFC700;
 }
-/* .para::after{
-    content: '';
+
+.dot {
+    background: #816DFA;
     width: 20px;
-    height: 40px;
-    color: #9F9F9F;
-} */
+    height: 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.dot:nth-child(2){
+    background: #000000;
+}
+.dot:nth-child(3){
+    background: #B88E2F;
+}
 /* Footer */
 .footer {
     margin-top: auto;
@@ -171,7 +185,9 @@
 .white-space-pre {
     white-space: pre;
 }
-
+.white-space-wrap {
+    white-space: wrap;
+}
 .pt-half {
     padding-top: 1rem;
 }
@@ -240,6 +256,10 @@
     .text-paragraph {
         font-size: 0.8rem;
     }
+    /* Single Product */
+    .head{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width:1040px) {
@@ -290,11 +310,16 @@
         width: 817px;
         height: 500px;
     }
+
     /* Checkout */
     .text-paragraph {
         font-size: 0.9rem;
     }
+
     .texthead {
         font-size: 1rem;
+    }
+    .head{
+        font-size: 1.5rem;
     }
 }

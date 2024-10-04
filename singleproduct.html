@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Cart</title>
+    <title>Product Page</title>
 </head>
 
 <body>
@@ -96,7 +96,7 @@
         <section>
             <div class="card border border-0 rounded-0 overflow-x-hidden mt-4">
                 <div class="row text-dark bglightyellow p-5">
-                    <div class="ms-5">
+                    <div class="ms-0 ms-md-5 ms-lg-5">
                         <a href="home.html"
                             class="link-black border border-0 fw-medium text-secondary px-3 after">Home</a>
                         <a href="shop.html"
@@ -107,15 +107,15 @@
             </div>
         </section>
         <section>
-            <div class="container-fluid">
+            <div class="container-fluid ps-3">
 
-                <div class="p-2">
-                    <div class="card mb-3 border-0 pt-5 ps-5">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-6 col-md-4 ps-5">
+                <div class="p-2 row">
+                    <div class="card mb-3 border-0 pt-5 ps-lg-5">
+                        <div class="row column-gap-5 justify-content-center">
+                            <div class="col-11 col-lg-5 col-md-8 ps-lg-5">
                                 <img src="images/SingleProduct1.png" class="img-fluid rounded-start" alt="...">
                             </div>
-                            <div class="col-12 col-lg-6 col-md-6">
+                            <div class="col-12 col-lg-5 col-md-8 pe-lg-5">
                                 <div class="card-body">
                                     <h2 class="card-title">Asgaard sofa</h2>
                                     <p class="card-text fw-medium fs-3">Rs. 250,000.00</p>
@@ -124,8 +124,8 @@
                                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star-half"></i>
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                width="1.5em" height="1.5em" viewBox="0 0 20 20">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                                viewBox="0 0 20 20">
                                                 <rect width="20" height="20" fill="none" />
                                                 <path fill="currentColor" fill-rule="evenodd"
                                                     d="M10 .5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 1 0V1a.5.5 0 0 0-.5-.5"
@@ -134,18 +134,218 @@
                                         </p>
                                         <p class="text-recent-grey">5 Customer Review</p>
                                     </div>
-                                    <p class="card-text col-8 text-dark texthead">Setting the bar as one of the loudest
+                                    <p class="card-text text-dark texthead">Setting the bar as one of the loudest
                                         speakers in its class, the Kilburn is a compact, stout-hearted hero with a
                                         well-balanced audio which boasts a clear midrange and extended highs for a
                                         sound.</p>
                                 </div>
+                                <div class="ps-2">
+                                    <p class="text-secondary ps-2">Size</p>
+                                    <a class="btn px-3 mx-2 text-light" href="#" role="button"
+                                        style="background-color: #B88E2F;">L</a>
+                                    <a class="btn px-3 mx-2 bglightyellow" href="#" role="button"
+                                        style="background-color: #F9F1E7;">XL</a>
+                                    <a class="btn px-3 mx-2 bglightyellow" href="#" role="button"
+                                        style="background-color: #F9F1E7;">XS</a>
+                                </div>
+                                <div class="pt-3 ps-2">
+                                    <div>
+                                        <p class="text-secondary ps-2">Color</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex ps-3 mt-4 pb-5">
+                                    <div class="d-flex justify-content-around px-5 me-4 rounded border border-dark">
+                                        <span> -</span><a href="#" class="btn text-dark"> 1 </a><span> +</span>
+                                    </div>
+                                    <div
+                                        class="d-flex align-items-center text-center border border-dark rounded px-5 py-3">
+                                        <a href="#" class="btn text-dark">Add to Cart</a>
+                                    </div>
+                                    <!-- <div class="d-flex justify-content-center pt-4 pe-3">
+                                        <a href="#" class="btn border border-dark text-dark px-5 py-2">Compare</a>
+                                    </div> -->
+                                </div>
+
+                                <div
+                                    class="row align-items-center justify-content-around text-recent-grey border-top pt-5 ps-3">
+                                    <p>SKU : SS001</p>
+                                    <p>Category : Sofas</p>
+                                    <p>Tags : Sofa, Chair, Home, Shop</p>
+                                    <p>Share :
+                                        <span class="text-dark">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                                viewBox="0 0 24 24">
+                                                <rect width="24" height="24" fill="none" />
+                                                <g fill="none">
+                                                    <path
+                                                        d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                                    <path fill="currentColor"
+                                                        d="M13.5 21.888C18.311 21.164 22 17.013 22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 5.013 3.689 9.165 8.5 9.888V15H9a1.5 1.5 0 0 1 0-3h1.5v-2A3.5 3.5 0 0 1 14 6.5h.5a1.5 1.5 0 0 1 0 3H14a.5.5 0 0 0-.5.5v2H15a1.5 1.5 0 0 1 0 3h-1.5z" />
+                                                </g>
+                                            </svg>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                                viewBox="0 0 24 24">
+                                                <rect width="24" height="24" fill="none" />
+                                                <path fill="currentColor"
+                                                    d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2M8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12a1.57 1.57 0 1 1 0 3.12m12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                                viewBox="0 0 1024 1024">
+                                                <rect width="1024" height="1024" fill="none" />
+                                                <path fill="currentColor"
+                                                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64m215.3 337.7c.3 4.7.3 9.6.3 14.4c0 146.8-111.8 315.9-316.1 315.9c-63 0-121.4-18.3-170.6-49.8c9 1 17.6 1.4 26.8 1.4c52 0 99.8-17.6 137.9-47.4c-48.8-1-89.8-33-103.8-77c17.1 2.5 32.5 2.5 50.1-2a111 111 0 0 1-88.9-109v-1.4c14.7 8.3 32 13.4 50.1 14.1a111.13 111.13 0 0 1-49.5-92.4c0-20.7 5.4-39.6 15.1-56a315.28 315.28 0 0 0 229 116.1C492 353.1 548.4 292 616.2 292c32 0 60.8 13.4 81.1 35c25.1-4.7 49.1-14.1 70.5-26.7c-8.3 25.7-25.7 47.4-48.8 61.1c22.4-2.4 44-8.6 64-17.3c-15.1 22.2-34 41.9-55.7 57.6" />
+                                            </svg>
+                                        </span>
+                                    </p>
+
+                                </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
 
             </div>
+        </section>
+        <section>
+            <div class="container-fluid border-top pt-5">
+                <div class="d-flex text-recent-grey justify-content-center align-items-center flex-column">
+                    <div class="d-flex pb-2 pb-lg-0">
+                        <h5 class="head text-dark fw-medium">Description</h5>
+                        <h5 class="head px-5 text-recent-grey text-center">Additional Information</h5>
+                        <h5 class="head text-recent-grey text-center">Reviews [5]</h5>
+                    </div>
+                    <div class="p-3 p-lg-5">
+                        <p class="card-text text-grey text px-5 py-2">Embodying the raw, wayward spirit of rock ‘n’ roll, the
+                            Kilburn portable active stereo speaker takes the unmistakable look and <br> sound of
+                            Marshall,
+                            unplugs the chords, and takes the show on the road.</p>
+
+                        <p class="card-text text-grey text px-5 py-2">Weighing in under 7 pounds, the Kilburn is a
+                            lightweight piece of vintage styled engineering. Setting the bar as one of the loudest <br>
+                            speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced
+                            audio which boasts a clear midrange <br> and extended highs for a sound that is both
+                            articulate
+                            and pronounced. The analogue knobs allow you to fine tune the controls <br> to your personal
+                            preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
+
+                    </div>
+                    <div class="row justify-content-center pb-5">
+                        <div class="col-12 col-lg-5 col-md-8 ps-lg-5">
+                            <img src="images/SingleProduct2.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-12 col-lg-5 col-md-8 ps-lg-5 pt-5 pt-lg-0">
+                            <img src="images/SingleProduct3.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid p-lg-5 mt-5 mt-lg-0"> 
+
+            <div class="text-center mt-5">
+                <h1 class="fs-1 fw-medium pb-4">Related Products</h1>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 py-4 px-5">
+                
+                  <div class="col">
+                    <div class="card">
+                        <span class="position-absolute top-0 end-0 text-light py-3 px-2 mt-4 me-4 rounded-circle bg-danger">
+                          -30%
+                        </span>
+                      <img src="images/image1.png" class="card-img-top" alt="#">
+                      <div class="overlay d-flex align-items-center">
+                      <a href="#" class="bgBtn">Add to cart</a>
+                      </div>
+                      <div class="card-body bg-card-body">
+                        <h5 class="card-title fw-semibold fs-4">Syltherine</h5>
+                      <div class="card-text mb">
+                      <p class="text-body-tertiary fw-medium fs-6">Stylish cafe chair</p>
+                      </div>
+                        <div class="d-flex justify-content-between align-items-baseline my">
+                        <p class="card-text fw-semibold fs-5 fs-6">Rp 2.500.000</p>
+                        <p class="card-text text-body-tertiary text-decoration-line-through fs-6">Rp 3.500.000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col">
+                    <div class="card">
+                        <span class="position-absolute top-0 end-0 text-light py-3 px-2 mt-4 me-4 rounded-circle bg-danger">
+                          -30%
+                        </span>
+                      <img src="images/image2.png" class="card-img-top" alt="#">
+                      <div class="overlay d-flex align-items-center">
+                      <a href="#" class="bgBtn">Add to cart</a>
+                      </div>
+                      <div class="card-body bg-card-body">
+                        <h5 class="card-title fw-semibold fs-4">Leviosa</h5>
+                      <div class="card-text mb">
+                      <p class="text-body-tertiary fw-medium fs-6">Stylish cafe chair</p>
+                      </div>
+                        <div class="d-flex justify-content-between align-items-baseline my">
+                        <p class="card-text fw-semibold fs-5 fs-6">Rp 2.500.000</p>
+                        <!-- <p class="card-text text-body-tertiary text-decoration-line-through fs-6">Rp 3.500.000</p> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col">
+                    <div class="card">
+                        <span class="position-absolute top-0 end-0 text-light py-3 px-2 mt-4 me-4 rounded-circle bg-danger">
+                          -30%
+                        </span>
+                      <img src="images/image3.png" class="card-img-top" alt="#">
+                      <div class="overlay d-flex align-items-center">
+                      <a href="#" class="bgBtn">Add to cart</a>
+                      </div>
+                      <div class="card-body bg-card-body">
+                        <h5 class="card-title fw-semibold fs-4">Lolito</h5>
+                      <div class="card-text mb">
+                      <p class="text-body-tertiary fw-medium fs-6">Luxury big sofa</p>
+                      </div>
+                        <div class="d-flex justify-content-between align-items-baseline my">
+                        <p class="card-text fw-semibold fs-5 fs-6">Rp 7.000.000</p>
+                        <p class="card-text text-body-tertiary text-decoration-line-through fs-6">Rp 14.000.000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col">
+                    <div class="card">
+                        <span class="position-absolute top-0 end-0 text-light py-3 px-2 mt-4 me-4 rounded-circle bg-danger">
+                          -30%
+                        </span>
+                      <img src="images/image4.png" class="card-img-top" alt="#">
+                      <div class="overlay d-flex align-items-center">
+                      <a href="#" class="bgBtn">Add to cart</a>
+                      </div>
+                      <div class="card-body bg-card-body">
+                        <h5 class="card-title fw-semibold fs-4">Respira</h5>
+                      <div class="card-text mb">
+                      <p class="text-body-tertiary fw-medium fs-6">Outdoor bar table and stool</p>
+                      </div>
+                        <div class="d-flex justify-content-between align-items-baseline my">
+                        <p class="card-text fw-semibold fs-5 fs-6">Rp 500.000</p>
+                        <!-- <p class="card-text text-body-tertiary text-decoration-line-through fs-6">${card.price_cross}</p> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <div class="d-flex justify-content-center">
+                <a class="btn" href="#" role="button" style="color: #B88E2F; border-color: #B88E2F;">Show More</a>
+            </div>
+        </div>
+
         </section>
     </main>
     <footer class="footer border-top border-secondary-subtle">

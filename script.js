@@ -11,6 +11,60 @@ const content = [
     price_cross: "Rp 3.500.000",
     alt: "Img"
   },
+  {
+    src: "images/image2.png",
+    heading: "Leviosa",
+    heading_shadow: "Stylish cafe chair",
+    price: "Rp 2.500.000",
+    alt: "Img"
+  },
+  {
+    src: "images/image3.png",
+    heading: "Lolito",
+    heading_shadow: "Luxury big sofa",
+    price: "Rp 7.000.000",
+    price_cross: "Rp 14.000.000",
+    alt: "Img"
+  },
+  {
+    src: "images/image4.png",
+    heading: "Respira",
+    heading_shadow: "Outdoor bar table and stool",
+    price: "Rp 500.000",
+    alt: "Img"
+  },
+  {
+    src: "images/image5.png",
+    heading: "Grifo",
+    heading_shadow: "Night lamp",
+    price: "Rp 15.000.000",
+    // price_cross: "Rp 14.000.000",
+    alt: "Img"
+  },
+  {
+    src: "images/image6.png",
+    heading: "Muggo",
+    heading_shadow: "Small mug",
+    price: "Rp 150.000",
+    // price_cross: "Rp 14.000.000",
+    alt: "Img"
+  },
+  {
+    src: "images/image7.png",
+    heading: "Pingky",
+    heading_shadow: "Cute bed set",
+    price: "Rp 7.000.000",
+    price_cross: "Rp 14.000.000",
+    alt: "Img"
+  },
+  {
+    src: "images/image8.png",
+    heading: "Potty",
+    heading_shadow: "Minimalist flower pot",
+    price: "Rp 500.000",
+    // price_cross: "Rp 14.000.000",
+    alt: "Img"
+  },
 ]
 
 const content1 = document.querySelector('.content')
