@@ -262,6 +262,14 @@
     margin-top: .5rem;
 }
 
+/* Counter-Button */
+.counter-btn {
+    /* font-size: 1.2rem; */
+    color: #000;
+    border: 1px solid #9F9F9F;
+    border-radius: 10px;
+}
+
 /* Pagination */
 .pag {
     font-size: .8rem;
@@ -473,6 +481,22 @@
     .secondary-btn {
         font-size: 1.2rem;
         padding: 1.1rem 3rem;
+    }
+
+    /* Counter-Button */
+    .counter-btn {
+        margin-top: 5px;
+        height: 4rem;
+    }
+
+    .counter-width {
+        font-size: 1rem;
+        width: 7.6875rem;
+    }
+
+    .add-to-cart-width {
+        font-size: 1.2rem;
+        width: 13.4375rem;
     }
 
     /* Pagination */
