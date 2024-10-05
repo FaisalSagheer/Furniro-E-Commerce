@@ -185,7 +185,16 @@
 .dot:nth-child(3) {
     background: #B88E2F;
 }
-
+.before::before{
+    content: ':';
+    font-size: 1.2rem;
+    padding:0 10px;
+    color: #9F9F9F;
+}
+.t-b{
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
 /* Contact */
 .contacthead {
     font-size: 1rem;
