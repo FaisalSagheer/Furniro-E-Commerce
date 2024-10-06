@@ -185,16 +185,19 @@
 .dot:nth-child(3) {
     background: #B88E2F;
 }
-.before::before{
+
+.before::before {
     content: ':';
     font-size: 1.2rem;
-    padding:0 10px;
+    padding: 0 10px;
     color: #9F9F9F;
 }
-.t-b{
+
+.t-b {
     padding-top: 7px;
     padding-bottom: 6px;
 }
+
 /* Contact */
 .contacthead {
     font-size: 1rem;
@@ -278,7 +281,11 @@
     border: 1px solid #9F9F9F;
     border-radius: 10px;
 }
-
+/* Cart Image */
+.cart-img {
+    width: 1.9375rem;
+    height: 1.625rem; 
+}
 /* Pagination */
 .pag {
     font-size: .8rem;
@@ -376,6 +383,12 @@
         font-size: 1rem;
         padding: 1rem 2.5rem;
         margin-top: .2rem;
+    }
+
+    /* Cart Image */
+    .cart-img {
+        width: 4.9375rem;
+        height: 4.625rem;
     }
 
     /* Pagination */
@@ -506,6 +519,12 @@
     .add-to-cart-width {
         font-size: 1.2rem;
         width: 13.4375rem;
+    }
+
+    /* Cart Image */
+    .cart-img {
+        width: 6.9375rem;
+        height: 5.625rem;
     }
 
     /* Pagination */
