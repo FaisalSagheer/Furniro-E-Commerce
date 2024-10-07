@@ -146,7 +146,9 @@
     width: 404px;
     margin: 0 20px;
 }
-
+.bg-danger:nth-child(1){
+display: none !important; 
+}
 /* Checkout */
 .text-head {
     color: #9F9F9F;

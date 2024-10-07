@@ -13,6 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <title>Home</title>
 </head>
 
@@ -120,7 +123,8 @@
 
                 <div class="text-center my-lg-5">
                     <h1 class="Heading-1 fw-semibold">Browse The Range</h1>
-                    <p class="text-center text text-recent-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="text-center text text-recent-grey">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
                 </div>
 
                 <div class="row row-cols-1 row-cols-md-3 g-3 g-lg-4 px-5 text-center">
@@ -161,19 +165,21 @@
             </div>
         </section>
         <section>
-            <div class="container-fluid p-lg-5 mt-5 mt-lg-0 bg_random row row-cols-1 row-cols-md-3 g-4">
+            <div class="container-fluid p-lg-5 mt-5 mt-lg-0 bg_random row row-cols-1 row-cols-md-2 g-4">
 
                 <div>
                     <div class="mt-5 pt-5">
-                        <h1 class="Heading-2 fw-bold text-center text-lg-start text-lg-start">50+ Beautiful rooms inspiration</h1>
+                        <h1 class="Heading-2 fw-bold text-center text-lg-start text-lg-start">50+ Beautiful rooms
+                            inspiration</h1>
                     </div>
-                    <p class="text text-center text-lg-start px-5 p-lg-0">Our designer already made a lot of beautiful prototipe of
+                    <p class="text text-center text-lg-start px-5 p-lg-0">Our designer already made a lot of beautiful
+                        prototipe of
                         rooms that inspire you</p>
                     <div class="d-flex justify-content-sm-start justify-content-center">
                         <a class="bg text-light fw-bold text-center text-lg-start" href="/">Explore More</a>
                     </div>
                 </div>
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner row row-cols-1 row-cols-md-3">
                         <div class="carousel-item active">
                             <img src="images//Inspiration.png" class="d-block w-100" alt="...">
@@ -195,7 +201,14 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>
+                </div> -->
+                <swiper-container class="mySwiper" slides-per-view="1" centered-slides="true"
+                    pagination="true" pagination-type="fraction" navigation="true">
+                    <swiper-slide><img src="images/Inspiration.png" class="ms-5" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/Inspiration.png" class="ms-5" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/Inspiration.png" class="ms-5" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/Inspiration.png" class="ms-5" alt=""></swiper-slide>
+                </swiper-container>
             </div>
         </section>
         <section>
@@ -251,6 +264,48 @@
                 rights revserved</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        const swiperEl = document.querySelector('swiper-container');
+        const swiper = swiperEl.swiper;
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+            .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<swiper-slide>Slide ' + --prependNumber + "</swiper-slide>",
+                    '<swiper-slide>Slide ' + --prependNumber + "</swiper-slide>",
+                ]);
+            });
+        document
+            .querySelector(".prepend-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<swiper-slide>Slide ' + --prependNumber + "</swiper-slide>"
+                );
+            });
+        document
+            .querySelector(".append-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<swiper-slide>Slide ' + ++appendNumber + "</swiper-slide>"
+                );
+            });
+        document
+            .querySelector(".append-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<swiper-slide>Slide ' + ++appendNumber + "</swiper-slide>",
+                    '<swiper-slide>Slide ' + ++appendNumber + "</swiper-slide>",
+                ]);
+            });
+    </script>
 </body>
 <script src="script.js"></script>
 
