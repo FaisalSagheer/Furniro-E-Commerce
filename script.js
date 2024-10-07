@@ -9,14 +9,16 @@ const content = [
     heading_shadow: "Stylish cafe chair",
     price: "Rp 2.500.000",
     price_cross: "Rp 3.500.000",
-    alt: "Img"
+    alt: "Img",
+    href:"singleproduct.html"
   },
   {
     src: "images/image2.png",
     heading: "Leviosa",
     heading_shadow: "Stylish cafe chair",
     price: "Rp 2.500.000",
-    alt: "Img"
+    alt: "Img",
+    href:"singleproduct.html"
   },
   {
     src: "images/image3.png",
@@ -24,14 +26,16 @@ const content = [
     heading_shadow: "Luxury big sofa",
     price: "Rp 7.000.000",
     price_cross: "Rp 14.000.000",
-    alt: "Img"
+    alt: "Img",
+    href:"singleproduct.html"
   },
   {
     src: "images/image4.png",
     heading: "Respira",
     heading_shadow: "Outdoor bar table and stool",
     price: "Rp 500.000",
-    alt: "Img"
+    alt: "Img",
+    href:"singleproduct.html"
   },
   {
     src: "images/image5.png",
@@ -39,7 +43,8 @@ const content = [
     heading_shadow: "Night lamp",
     price: "Rp 15.000.000",
     // price_cross: "Rp 14.000.000",
-    alt: "Img"
+    alt: "Img",
+    href:"singleproduct.html"
   },
   {
     src: "images/image6.png",
@@ -47,7 +52,9 @@ const content = [
     heading_shadow: "Small mug",
     price: "Rp 150.000",
     // price_cross: "Rp 14.000.000",
-    alt: "Img"
+    alt: "Img",
+    href:"singleproduct.html"
+
   },
   {
     src: "images/image7.png",
@@ -55,7 +62,8 @@ const content = [
     heading_shadow: "Cute bed set",
     price: "Rp 7.000.000",
     price_cross: "Rp 14.000.000",
-    alt: "Img"
+    alt: "Img",
+    href:"singleproduct.html"
   },
   {
     src: "images/image8.png",
@@ -63,7 +71,9 @@ const content = [
     heading_shadow: "Minimalist flower pot",
     price: "Rp 500.000",
     // price_cross: "Rp 14.000.000",
-    alt: "Img"
+    alt: "Img",
+    href:"singleproduct.html"
+
   },
 ]
 
@@ -80,7 +90,7 @@ const cards = content.map(card => {
                           </span>
                         <img src=${card.src} class="card-img-top" alt=${card.alt}>
                         <div class="overlay d-flex align-items-center">
-                        <a href="#" class="bgBtn">Add to cart</a>
+                        <a href=${card.href} class="bgBtn">Add to cart</a>
                         </div>
                         <div class="card-body bg-card-body">
                           <h5 class="card-title fw-semibold fs-4">${card.heading}</h5>
@@ -98,3 +108,4 @@ const cards = content.map(card => {
 }).join('')
 
 content1.innerHTML = cards
+

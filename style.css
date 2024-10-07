@@ -144,7 +144,7 @@
 .d-block {
     height: 582px;
     width: 404px;
-    margin: 0 20px;
+    /* margin: 0 20px; */
 }
 
 /* .bg-danger:nth-child(2) {
@@ -548,4 +548,24 @@
         right: 4rem;
         bottom: 0;
     }
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ img {
+    /* display: block;
+    object-fit: cover; */
+    height: 100%;
+    width: 100%;
+    /* margin:0 20px; */
 }
