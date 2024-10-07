@@ -146,9 +146,13 @@
     width: 404px;
     margin: 0 20px;
 }
-.bg-danger:nth-child(1){
-display: none !important; 
-}
+
+/* .bg-danger:nth-child(2) {
+    display: none;
+} */
+/* .bg-danger:nth-child(2) {
+    display: block !important;
+} */
 /* Checkout */
 .text-head {
     color: #9F9F9F;
@@ -283,11 +287,13 @@ display: none !important;
     border: 1px solid #9F9F9F;
     border-radius: 10px;
 }
+
 /* Cart Image */
 .cart-img {
     width: 1.9375rem;
-    height: 1.625rem; 
+    height: 1.625rem;
 }
+
 /* Pagination */
 .pag {
     font-size: .8rem;
