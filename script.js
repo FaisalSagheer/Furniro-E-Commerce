@@ -6,6 +6,7 @@ const content = [
   {
     src: "images/image1.png",
     heading: "Syltherine",
+    text:"-30%",
     heading_shadow: "Stylish cafe chair",
     price: "Rp 2.500.000",
     price_cross: "Rp 3.500.000",
@@ -15,14 +16,17 @@ const content = [
   {
     src: "images/image2.png",
     heading: "Leviosa",
+    text:"",
     heading_shadow: "Stylish cafe chair",
     price: "Rp 2.500.000",
+    price_cross: "",
     alt: "Img",
     href:"singleproduct.html"
   },
   {
     src: "images/image3.png",
     heading: "Lolito",
+    text:"-50%",
     heading_shadow: "Luxury big sofa",
     price: "Rp 7.000.000",
     price_cross: "Rp 14.000.000",
@@ -32,8 +36,10 @@ const content = [
   {
     src: "images/image4.png",
     heading: "Respira",
+    text:"new",
     heading_shadow: "Outdoor bar table and stool",
     price: "Rp 500.000",
+    price_cross: "",
     alt: "Img",
     href:"singleproduct.html"
   },
@@ -41,17 +47,19 @@ const content = [
     src: "images/image5.png",
     heading: "Grifo",
     heading_shadow: "Night lamp",
+    text:'',
     price: "Rp 15.000.000",
-    // price_cross: "Rp 14.000.000",
+    price_cross: "",
     alt: "Img",
     href:"singleproduct.html"
   },
   {
     src: "images/image6.png",
     heading: "Muggo",
+    text:"new",
     heading_shadow: "Small mug",
     price: "Rp 150.000",
-    // price_cross: "Rp 14.000.000",
+    price_cross: "",
     alt: "Img",
     href:"singleproduct.html"
 
@@ -59,6 +67,7 @@ const content = [
   {
     src: "images/image7.png",
     heading: "Pingky",
+    text:"-50%",
     heading_shadow: "Cute bed set",
     price: "Rp 7.000.000",
     price_cross: "Rp 14.000.000",
@@ -68,9 +77,10 @@ const content = [
   {
     src: "images/image8.png",
     heading: "Potty",
+    text:"new",
     heading_shadow: "Minimalist flower pot",
     price: "Rp 500.000",
-    // price_cross: "Rp 14.000.000",
+    price_cross: "",
     alt: "Img",
     href:"singleproduct.html"
 
@@ -85,8 +95,8 @@ const cards = content.map(card => {
     
                  <div class="col">
                       <div class="card">
-                          <span class="position-absolute top-0 end-0 text-light py-3 px-2 mt-4 me-4 rounded-circle bg-danger">
-                            -30%
+                          <span class="position-absolute top-0 end-0 text-light py-3 px-2 mt-4 me-4 rounded-circle bg-green">
+                            ${card.text}
                           </span>
                         <img src=${card.src} class="card-img-top" alt=${card.alt}>
                         <div class="overlay d-flex align-items-center">
