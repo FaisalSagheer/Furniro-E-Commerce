@@ -79,6 +79,24 @@
     font-size: 1rem;
 }
 
+/* Home-Slider */
+.cont__swiper {
+    /* margin: initial; */
+}
+
+.cont__images {
+    /* display: grid; */
+}
+
+.article
+.cont__img {
+    height: 582px;
+    width: 404px;
+    transition: scale .4s;
+}
+.article{
+    scale: .8;
+}
 /* Cards  Hover-Effect*/
 
 .overlay {
@@ -141,56 +159,60 @@
 /* Blog Page End*/
 
 /* Slider  */
-.d-block {
+/* .d-block {
     height: 582px;
     width: 404px;
-    margin: 0 20px;
-}
+} */
 
 .bg-green {
     background: #E97171;
 }
 
-.product .col:nth-child(-n+2) > div > span {
+.product .col:nth-child(-n+2)>div>span {
     display: none;
 }
 
-.product .col:nth-child(even) > div > span {
+.product .col:nth-child(even)>div>span {
     background: #2EC1AC;
 }
 
-.product .col:nth-child(1) > div > span {
-    display: block;
-}
-.product .col:nth-child(4) > div > span {
+.product .col:nth-child(1)>div>span {
     display: block;
 }
 
-.product .col:nth-child(6) > div > span {
+.product .col:nth-child(4)>div>span {
+    display: block;
+}
+
+.product .col:nth-child(6)>div>span {
     display: none;
 }
 
-.product .col:nth-child(10) > div > span {
-    display: none;
-}
-.product .col:nth-child(14) > div > span {
-    display: none;
-}
-.content .col:nth-child(-n+2) > div > span {
+.product .col:nth-child(10)>div>span {
     display: none;
 }
 
-.content .col:nth-child(even) > div > span {
+.product .col:nth-child(14)>div>span {
+    display: none;
+}
+
+.content .col:nth-child(-n+2)>div>span {
+    display: none;
+}
+
+.content .col:nth-child(even)>div>span {
     background: #2EC1AC;
 }
 
-.content .col:nth-child(1) > div > span {
+.content .col:nth-child(1)>div>span {
     display: block;
 }
-.content .col:nth-child(4) > div > span {
+
+.content .col:nth-child(4)>div>span {
     display: block;
 }
-.content .col:nth-child(5) > div > span {
+
+.content .col:nth-child(5)>div>span {
     display: none;
 }
 
@@ -589,13 +611,4 @@
         right: 4rem;
         bottom: 0;
     }
-}
-
-
-.slide .carousel-indicators .active{
-    background-color: #B88E2F !important;
-}
-
-.slide .carousel-indicators{
-    border-radius: 50%;
 }

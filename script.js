@@ -6,83 +6,83 @@ const content = [
   {
     src: "images/image1.png",
     heading: "Syltherine",
-    text:"-30%",
+    text: "-30%",
     heading_shadow: "Stylish cafe chair",
     price: "Rp 2.500.000",
     price_cross: "Rp 3.500.000",
     alt: "Img",
-    href:"singleproduct.html"
+    href: "singleproduct.html"
   },
   {
     src: "images/image2.png",
     heading: "Leviosa",
-    text:"",
+    text: "",
     heading_shadow: "Stylish cafe chair",
     price: "Rp 2.500.000",
     price_cross: "",
     alt: "Img",
-    href:"singleproduct.html"
+    href: "singleproduct.html"
   },
   {
     src: "images/image3.png",
     heading: "Lolito",
-    text:"-50%",
+    text: "-50%",
     heading_shadow: "Luxury big sofa",
     price: "Rp 7.000.000",
     price_cross: "Rp 14.000.000",
     alt: "Img",
-    href:"singleproduct.html"
+    href: "singleproduct.html"
   },
   {
     src: "images/image4.png",
     heading: "Respira",
-    text:"new",
+    text: "new",
     heading_shadow: "Outdoor bar table and stool",
     price: "Rp 500.000",
     price_cross: "",
     alt: "Img",
-    href:"singleproduct.html"
+    href: "singleproduct.html"
   },
   {
     src: "images/image5.png",
     heading: "Grifo",
     heading_shadow: "Night lamp",
-    text:'',
+    text: '',
     price: "Rp 15.000.000",
     price_cross: "",
     alt: "Img",
-    href:"singleproduct.html"
+    href: "singleproduct.html"
   },
   {
     src: "images/image6.png",
     heading: "Muggo",
-    text:"new",
+    text: "new",
     heading_shadow: "Small mug",
     price: "Rp 150.000",
     price_cross: "",
     alt: "Img",
-    href:"singleproduct.html"
+    href: "singleproduct.html"
 
   },
   {
     src: "images/image7.png",
     heading: "Pingky",
-    text:"-50%",
+    text: "-50%",
     heading_shadow: "Cute bed set",
     price: "Rp 7.000.000",
     price_cross: "Rp 14.000.000",
     alt: "Img",
-    href:"singleproduct.html"
+    href: "singleproduct.html"
   },
   {
     src: "images/image8.png",
     heading: "Potty",
-    text:"new",
+    text: "new",
     heading_shadow: "Minimalist flower pot",
     price: "Rp 500.000",
     price_cross: "",
     alt: "Img",
-    href:"singleproduct.html"
+    href: "singleproduct.html"
 
   },
 ]
@@ -119,3 +119,23 @@ const cards = content.map(card => {
 
 content1.innerHTML = cards
 
+
+let contSwiper = new Swiper('.cont__swiper', {
+
+  loop: true,
+  spaceBetween: 8,
+  grabCursor: true,
+  slidePerView: 3,
+  centeredSlides: 'auto',
+  pagination:"true",
+  paginationClickable:"true",
+  autoplay: {
+  delay: 3000,
+  disableOnInteraction: 'false'
+},
+  breakPoints: {
+  1220: {
+    spaceBetween: 10
+  }
+}
+});

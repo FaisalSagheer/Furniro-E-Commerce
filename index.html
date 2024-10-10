@@ -13,8 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+        <link rel="stylesheet" href="swiper-bundle.min.css">
     <title>Home</title>
 </head>
 
@@ -164,12 +163,12 @@
             </div>
         </section>
         <section>
-            <div class="container-fluid p-lg-5 mt-5 mt-lg-0 bg_random row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0">
+            <div class="container-fluid p-lg-5 mt-5 mt-lg-0 bg_random row row-cols-1 row-cols-md-2 g-0">
 
                 <div>
                     <div class="mt-5 pt-5">
                         <h1 class="px-5 px-lg-0 Heading-2 fw-bold text-center text-lg-start">50+ Beautiful
-                            rooms
+                            rooms <br>
                             inspiration</h1>
                     </div>
                     <p class="text text-center text-lg-start px-5 p-lg-0 text-recent-grey">Our designer already made a
@@ -182,8 +181,22 @@
                     </div>
                 </div>
                 
-                <div>
-                    
+                <div class="cont__images">
+                    <div class="cont__swiper swiper">
+                         <div class="swiper-wrapper">
+                            <article class="article swiper-slide">
+                             <img src="images/Inspiration.png" class="cont__img" alt="#">
+                            </article>
+                       
+                            <article class="article swiper-slide">
+                             <img src="images/Inspiration2.png" class="cont__img" alt="#">
+                            </article>
+                      
+                            <article class="article swiper-slide">
+                             <img src="images/Inspiration3.png" class="cont__img" alt="#">
+                            </article>
+                         </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -241,20 +254,9 @@
                 rights revserved</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 40,
-            centeredSlides: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
+    
 </body>
+<script src="swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 
 </html>
