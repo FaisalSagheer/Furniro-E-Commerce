@@ -123,19 +123,21 @@ content1.innerHTML = cards
 let contSwiper = new Swiper('.cont__swiper', {
 
   loop: true,
-  spaceBetween: -254,
+  spaceBetween: -130,
   grabCursor: true,
   slidePerView: 'auto',
-  centeredSlides: 3,
-  pagination:"true",
-  paginationClickable:"true",
+  centeredSlides: 'auto',
+  // // pagination:"true",
+  // pagination:{
+  //   paginationClickable:"true",
+  // },
   autoplay: {
-  delay: 3000,
-  disableOnInteraction: 'false'
+  delay: 2000,
+  // disableOnInteraction: 'false'
 },
   breakPoints: {
   1220: {
-    spaceBetween: -50
+    spaceBetween: -180
   }
 }
 });
