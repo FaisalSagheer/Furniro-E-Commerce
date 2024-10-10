@@ -79,24 +79,29 @@
     font-size: 1rem;
 }
 
+/* Inspiration Section Start*/
 /* Home-Slider */
 .cont__swiper {
     /* margin: initial; */
 }
 
 .cont__images {
+    padding-top: 0;
+    padding-bottom: 10px;
     /* display: grid; */
 }
 
-.article
-.cont__img {
+.article .cont__img {
     height: 582px;
     width: 404px;
-    transition: scale .4s;
+    /* transition: scale .4s; */
 }
-.article{
-    scale: .8;
+
+.article {
+    /* scale: .8; */
 }
+
+/* Inspiration Section End*/
 /* Cards  Hover-Effect*/
 
 .overlay {
@@ -404,6 +409,12 @@
         border-radius: 2px;
     }
 
+    .article .cont__img {
+        height: 582px;
+        width: 404px;
+    }
+
+
     /* Blog */
     .img {
         width: 817px;
@@ -602,6 +613,7 @@
     .pag {
         font-size: 1.2rem;
     }
+
 }
 
 

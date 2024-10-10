@@ -123,10 +123,10 @@ content1.innerHTML = cards
 let contSwiper = new Swiper('.cont__swiper', {
 
   loop: true,
-  spaceBetween: 8,
+  spaceBetween: -254,
   grabCursor: true,
-  slidePerView: 3,
-  centeredSlides: 'auto',
+  slidePerView: 'auto',
+  centeredSlides: 3,
   pagination:"true",
   paginationClickable:"true",
   autoplay: {
@@ -135,7 +135,7 @@ let contSwiper = new Swiper('.cont__swiper', {
 },
   breakPoints: {
   1220: {
-    spaceBetween: 10
+    spaceBetween: -50
   }
 }
 });
