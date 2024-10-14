@@ -123,21 +123,33 @@ content1.innerHTML = cards
 let contSwiper = new Swiper('.cont__swiper', {
 
   loop: true,
-  spaceBetween: -130,
-  grabCursor: true,
-  slidePerView: 'auto',
+  spaceBetween: -120,
+  // grabCursor: true,
+  slidePerView: 1,
   centeredSlides: 'auto',
-  // // pagination:"true",
-  // pagination:{
-  //   paginationClickable:"true",
-  // },
   autoplay: {
   delay: 2000,
-  // disableOnInteraction: 'false'
+  disableOnInteraction: 'false'
 },
-  breakPoints: {
+pagination: {
+  clickable: true,
+},
+breakpoints: {
+  // 640: {
+  //   slidesPerView: 2,
+  //   spaceBetween: 10,
+  // },
+  768: {
+    slidesPerView: 2,
+    spaceBetween: 100,
+  },
+  1024: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+  },
   1220: {
-    spaceBetween: -180
-  }
-}
+    slidesPerView: 2,
+    spaceBetween: 180,
+  },
+},
 });
