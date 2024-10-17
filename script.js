@@ -94,22 +94,22 @@ const cards = content.map(card => {
   return `
     
                  <div class="col">
-                      <div class="card">
-                          <span class="position-absolute top-0 end-0 text-light py-3 px-2 mt-4 me-4 rounded-circle bg-green">
+                      <div class="card border-0 bg-card-body">
+                          <span class="position-absolute top-0 end-0 text-light py-3 px-2 mt-4 me-5 rounded-circle bg-green">
                             ${card.text}
                           </span>
-                        <img src=${card.src} class="card-img-top" alt=${card.alt}>
-                        <div class="overlay d-flex align-items-center">
-                        <a href=${card.href} class="bgBtn">Add to cart</a>
+                        <img src=${card.src} class="product-img-top rounded-top" alt=${card.alt}>
+                        <div class="overlay d-flex align-items-center justify-content-center">
+                        <a href=${card.href} class="bgBtn d-flex py-3 px-5 bg-light fw-semibold">Add to cart</a>
                         </div>
-                        <div class="card-body bg-card-body">
-                          <h5 class="card-title fw-semibold fs-4">${card.heading}</h5>
+                        <div class="card-body">
+                          <h5 class="card-title Heading-3 fw-semibold">${card.heading}</h5>
                         <div class="card-text mb">
-                        <p class="text-body-tertiary fw-medium fs-6">${card.heading_shadow}</p>
+                        <p class="text-body-tertiary text fw-medium">${card.heading_shadow}</p>
                         </div>
                           <div class="d-flex justify-content-between align-items-baseline my">
-                          <p class="card-text fw-semibold fs-5 fs-6">${card.price}</p>
-                          <p class="card-text text-body-tertiary text-decoration-line-through fs-6">${card.price_cross}</p>
+                          <p class="card-text fw-semibold text-dark pag">${card.price}</p>
+                          <p class="card-text text-body-tertiary text-decoration-line-through card-subtitle text-recent-grey">${card.price_cross}</p>
                           </div>
                         </div>
                       </div>
